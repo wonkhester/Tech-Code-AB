@@ -10,8 +10,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 10vh;
+    height: 60px;
     box-shadow: 0px 0px 15px 5px rgb(61, 61, 61);
+    top: 0;
 }
 #nav-name {
     display: flex;
@@ -24,7 +25,7 @@ body {
     padding: 0;
     display: flex;
     background-color: rgb(0, 0, 255);
-    height: 8vh;
+    height: 48px;
 }
 #nav-name-btn:Hover {
     background-color: rgb(0, 0, 185);
@@ -40,7 +41,7 @@ body {
     padding: 0;
     display: flex;
     background-color: rgb(0, 0, 255);
-    height: 8vh;
+    height: 48px;
 }
 #account-access-btn:Hover {
     background-color: rgb(0, 0, 185);
@@ -49,34 +50,50 @@ body {
     display: flex;
     background-color: blue;
     padding: 0;
-    width: 8vh;
-    height: 8vh;
+    width: 48px;
+    height: 48px;
 }
 #cart-access-btn:Hover {
     background-color: rgb(0, 0, 185);
 }
 #cart-access-img {
     display: flex;
-    width: 8vh;
-    height: 8vh;
+    width: 48px;
+    height: 48px;
 }
 
 
-
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 40vh;
+    background-color: rgba(0, 128, 0, 0.6) ;
+    box-shadow: 0px 0px 15px 5px rgba(0, 128, 0, 0.6);
+}
 * {box-sizing:border-box}
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
+    max-width: 90vw;
     margin: auto;
 }
 .mySlides {
-    max-width: 90vw;
+    min-width: 30vw;
     max-height: 40vh;
+}
+.mySlidesDotContainer {
+    display: flex;
+    position: absolute;
+    top: calc(40% + 60px);
+    left: 50%;
+    transform: translate(-50%,-110%);
+    width: auto;
 }
 .prev, .next {
     cursor: pointer;
+    top: 25%;
+    right: calc(100% - 34px);
     position: absolute;
-    top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -108,7 +125,8 @@ body {
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: calc(40% + 60px);
+    transform: translate(0,-100%);
 }
 .dot {
     cursor: pointer;
@@ -117,7 +135,7 @@ body {
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
     transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
@@ -130,4 +148,13 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+
+
+#foot {
+    background-color: rgb(0, 0, 255);
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
 }

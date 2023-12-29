@@ -11,7 +11,7 @@
 
         echo '<div class="mySlidesContainer">';
         echo "<div class='numbertext'>$i / $fileCount</div>"; // Display image number and total count
-        echo "<img class='mySlides' src='slide-img/$imgName' style='width:100%' alt='Image $i'>";
+        echo "<img class='mySlides' src='slide-img/$imgName' alt='Image $i'>";
         echo '</div>';
     }
     ?>
@@ -19,16 +19,22 @@
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
 
-<?php
+    <?php
+    echo "<div class='mySlidesDotContainer'>";
     // Display dots/circles for each slide
     for ($i = 1; $i <= $fileCount; $i++) {
         echo '<div style="text-align:center">';
         echo "<span class='dot' onclick='currentSlide($i)'></span>";
         echo '</div>';
     }
+    echo "</div>";
+    ?>
+</div>
+<br>
+
+<?php
+
 ?>
 
 <script>

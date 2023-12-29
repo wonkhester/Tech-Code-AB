@@ -18,5 +18,15 @@
     include("showcase.php");
     ?>
     </div>
+    <div id="bread">
+    <?php
+    include("bread.php");
+    ?>
+    </div>
+    <div id="foot">
+    <?php
+    include("foot.php");
+    ?>
+    </div>
 </body>
 </html>
